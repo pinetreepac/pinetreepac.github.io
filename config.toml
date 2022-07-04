@@ -1,4 +1,4 @@
-baseURL = 'http://pinetreepac.com'
+baseURL = 'http://pinetreepac.github.io'
 languageCode = 'en-us'
 title = 'Pine Tree PAC'
 theme = "hero"
@@ -15,9 +15,9 @@ theme = "hero"
     meta_twitter_creator = "@pinetreepac"
 
 [params.logo]
-    mobile = "images/logo-mobile.svg"
-    mobile_height = "36px"
-    mobile_width = "36px"
+    mobile = "images/pinetreesamplelogo.png"
+    mobile_height = "294px"
+    mobile_width = "40px"
     desktop = "images/pinetreesamplelogo.png"
     desktop_height = "40px"
     desktop_width = "294px"
