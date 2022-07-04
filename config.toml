@@ -1,0 +1,44 @@
+baseURL = 'http://pinetreepac.com'
+languageCode = 'en-us'
+title = 'Pine Tree PAC'
+theme = "hero"
+
+[params.homepage_meta_tags]
+    meta_description = "Join us in keeping New Hampshire free."
+    meta_og_title = "Pine Tree PAC"
+    meta_og_type = "website"
+    meta_og_url = "https://pinetreepac.com"
+    meta_og_image = "https://www.mywebsite.com/images/tn.png"
+    meta_og_description = "Join us in keeping New Hampshire free."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@pinetreepac"
+    meta_twitter_creator = "@pinetreepac"
+
+[params.logo]
+    mobile = "images/logo-mobile.svg"
+    mobile_height = "36px"
+    mobile_width = "36px"
+    desktop = "images/pinetreesamplelogo.png"
+    desktop_height = "40px"
+    desktop_width = "294px"
+    alt = "Pine Tree PAC"
+
+
+[[menu.main]]
+	name = "About"
+	url = "/about/"
+    weight = 1
+
+[[menu.main]]
+	name = "Volunteer"
+	url = "/volunteer/"
+    weight = 2
+
+[[menu.main]]
+	name = "Donate"
+	url = "/donate/"
+    weight = 3
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"
