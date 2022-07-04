@@ -14,7 +14,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #263e31;
-  --secondary: #43454d;
+  --secondary: #697A50;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -1023,13 +1023,13 @@ mark,
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #cacbcd; }
+  background-color: #d5dace; }
 
 .table-hover .table-secondary:hover {
-  background-color: #bdbec1; }
+  background-color: #c9cfbf; }
   .table-hover .table-secondary:hover > td,
   .table-hover .table-secondary:hover > th {
-    background-color: #bdbec1; }
+    background-color: #c9cfbf; }
 
 .table-success,
 .table-success > th,
@@ -1208,12 +1208,12 @@ button.bg-primary:focus {
   background-color: #131e18 !important; }
 
 .bg-secondary {
-  background-color: #43454d !important; }
+  background-color: #697A50 !important; }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #2b2d32 !important; }
+  background-color: #4e5b3c !important; }
 
 .bg-success {
   background-color: #28a745 !important; }
@@ -1303,7 +1303,7 @@ button.bg-dark:focus {
   border-color: #263e31 !important; }
 
 .border-secondary {
-  border-color: #43454d !important; }
+  border-color: #697A50 !important; }
 
 .border-success {
   border-color: #28a745 !important; }
@@ -5286,10 +5286,10 @@ a.text-primary:hover, a.text-primary:focus {
   color: #131e18 !important; }
 
 .text-secondary {
-  color: #43454d !important; }
+  color: #697A50 !important; }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: #2b2d32 !important; }
+  color: #4e5b3c !important; }
 
 .text-success {
   color: #28a745 !important; }
@@ -5452,7 +5452,7 @@ ol {
     width: 100%; }
 
 .footer {
-  background: #43454d;
+  background: #697A50;
   padding-top: 20px;
   padding-bottom: 20px; }
   .footer .footer-inner {
@@ -5483,19 +5483,19 @@ ol {
     .footer ul li {
       display: block;
       margin-right: 10px;
-      color: #c4c5cb;
+      color: #e6eadf;
       font-size: 0.9rem;
       line-height: 1.8; }
       .footer ul li:last-of-type {
         margin-right: 0; }
       .footer ul li a {
-        color: #c4c5cb;
+        color: #e6eadf;
         text-decoration: none; }
         .footer ul li a:hover {
           text-decoration: underline; }
       .footer ul li.copyright {
         font-weight: bold;
-        color: #c4c5cb;
+        color: #e6eadf;
         display: none; }
         @media (min-width: 768px) {
           .footer ul li.copyright {
@@ -5517,7 +5517,7 @@ ol {
             padding: 10px 8px 10px 8px;
             font-weight: 300; } }
 .sub-footer {
-  background: #2b2d32;
+  background: #4e5b3c;
   padding-top: 20px;
   padding-bottom: 20px; }
   @media (min-width: 768px) {
@@ -5538,14 +5538,14 @@ ol {
       .sub-footer .sub-footer-inner ul li {
         list-style: none;
         display: block;
-        color: #a8abb4;
+        color: #cdd6c0;
         font-size: 0.9rem;
         line-height: 1.8; }
         .sub-footer .sub-footer-inner ul li strong {
           font-weight: bold;
           color: #ffffff; }
         .sub-footer .sub-footer-inner ul li a {
-          color: #a8abb4;
+          color: #cdd6c0;
           text-decoration: none; }
           .sub-footer .sub-footer-inner ul li a:hover {
             text-decoration: underline; }
@@ -5888,7 +5888,7 @@ ul.social {
     font-size: 1.2rem;
     font-weight: light;
     line-height: 1.5;
-    color: #43454d; }
+    color: #697A50; }
     @media (min-width: 576px) {
       .intro p {
         width: 70%; } }
@@ -5922,16 +5922,16 @@ ul.social {
     transform: skewY(-5deg); }
 
 .strip-primary-gradient {
-  background-image: linear-gradient(to right, #263e31, #43454d); }
+  background-image: linear-gradient(to right, #263e31, #697A50); }
 
 .strip-primary-gradient-top-bottom {
-  background-image: linear-gradient(to bottom, #263e31, #43454d); }
+  background-image: linear-gradient(to bottom, #263e31, #697A50); }
 
 .strip-primary {
   background-color: #263e31; }
 
 .strip-secondary {
-  background-color: #43454d; }
+  background-color: #697A50; }
 
 .strip-diagonal-right {
   margin-top: -100px;
@@ -5988,7 +5988,7 @@ ul.social {
     .feature .feature-content p {
       margin: 0; }
       .feature .feature-content p strong {
-        color: #43454d;
+        color: #697A50;
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: 700; }
@@ -6077,7 +6077,7 @@ html {
   background-color: #263e31; }
 
 .bg-secondary {
-  background-color: #43454d; }
+  background-color: #697A50; }
 
 .page-services-single .content > p:first-of-type {
   font-size: 1.2rem;
