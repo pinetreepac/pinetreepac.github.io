@@ -15,10 +15,10 @@ theme = "hero"
     meta_twitter_creator = "@pinetreepac"
 
 [params.logo]
-    mobile = "images/pinetreesamplelogo.png"
+    mobile = "/pinetreesamplelogo.png"
     mobile_height = "294px"
     mobile_width = "40px"
-    desktop = "images/pinetreesamplelogo.png"
+    desktop = "/images/pinetreesamplelogo.png"
     desktop_height = "40px"
     desktop_width = "294px"
     alt = "Pine Tree PAC"
