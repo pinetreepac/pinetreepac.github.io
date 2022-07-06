@@ -1181,6 +1181,29 @@ mark,
   .table-responsive > .table-bordered {
     border: 0; }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto; }
+
+.figure {
+  display: inline-block; }
+
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1; }
+
+.figure-caption {
+  font-size: 90%;
+  color: #6c757d; }
+
 .align-baseline {
   vertical-align: baseline !important; }
 
@@ -5579,7 +5602,7 @@ ol {
 
 .logo-mobile {
   display: block;
-  width: 40px;
+  width: 140px;
   padding: 10px 0 10px 0; }
   @media (min-width: 576px) {
     .logo-mobile {
@@ -6154,5 +6177,13 @@ html {
   /* Masonry bricks or child elements */
   background-color: #eee;
   margin: 0 0 1em; }
+
+.page-intro iframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.page-intro ul li {
+  list-style: bullet; }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,7 +11,7 @@
 @import 'bootstrap/grid';
 @import 'bootstrap/type';
 @import 'bootstrap/tables';
-// @import "bootstrap/images";
+@import "bootstrap/images";
 // @import "bootstrap/code";
 // @import "bootstrap/forms";
 // @import "bootstrap/buttons";
@@ -69,6 +69,7 @@
 @import 'pages/services/service-summary';
 @import 'pages/work/work-summary';
 @import 'pages/work/page-work-single';
+@import 'pages/pinetree';
 
 // Display breakpoints for DEV
 // body:after {

@@ -1,29 +1,46 @@
 {{ define "header_css" }}{{ end }}
-{{ define "body_classes" }}page-pages-aboutlayout{{ end }}
+{{ define "body_classes" }}page-work-list{{ end }}
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .Params.heroSubHeading "content" .)}}
-
-{{ $headless := .Site.GetPage "/pages/about" }}
-{{ $subpages := $headless.Resources.ByType "page" }}
-{{ $subpages := sort $subpages ".Params.weight" }}
-{{ range $subpages }}
-<div class="strip bg-cover bg-position-top bg-overlay" style="background-image: url('{{ .Params.background | relURL }}');">
-  <div class="container pt-17 pb-17">
-    <div class="row">
-      <div class="col-12 col-md-6 {{ if eq .Params.align "right" }}offset-md-6{{ end }}">
-        <h2 class="text-primary text-capitalize">{{ .Title }}</h2>
-        {{ .Content }}
-        {{ if .Params.button }}
-          <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
-        {{ end }}
-      </div>
+{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
+{{ if .Content }}
+<div class="container pt-6 pt-md-10">
+  <div class="row">
+    <div class="col-12">
+      <div class="page-intro">
+      {{ .Content }}
+    </div>
     </div>
   </div>
 </div>
 {{ end }}
 
-{{ .Content }}
+{{ partial "whatwedo.html" . }}
+
+<div class="container pt-8 pb-8 pb-md-8 pt-md-8">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <h2 class="text-center mb-3">Who We Are</h2>
+    </div>
+  </div>
+  <div class="row justify-content-between">
+    {{ range first 6 (sort (where .Resources "Type" "bio") ".Params.weight") }}
+      <div class="col-12 col-sm-4 offset-md-1 mr-auto mb-3 ">
+        <div class="pb-1">
+          <img class="img-thumbnail" src="{{ .Params.Thumbnail }}" alt="{{ .Title }}">
+        </div>
+        <h4>{{ .Title }}</h4>
+        <div>{{ .Content }}</div>
+      </div>
+    {{ end }}
+  </div>
+  <div class="row justify-content-start">
+    <div class="col-12 text-center">
+      <a class="button button-primary" href="/volunteer">Volunteer</a>
+      <a class="button button-primary" href="/donate">Donate</a>
+    </div>
+  </div>
+</div>
 
 {{ end }}

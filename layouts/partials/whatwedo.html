@@ -1,0 +1,24 @@
+<div class="container pt-8 pb-8 pb-md-8 pt-md-8">
+    <div class="row justify-content-start">
+        <div class="col-12">
+            <h2 class="text-center mb-3">What We Do</h2>
+        </div>
+        {{ range first 6 (sort (where .Resources "Type" "about") ".Params.weight") }}
+        <div class="col-12 col-md-6 mb-1">
+            <div class="service service-summary">
+                <div class="service-image">
+                    <img height="80" width="80" src="{{ .Params.Thumbnail }}" alt="{{ .Title }}">
+                </div>
+                <div class="service-content">
+                    <h2 class="service-title">{{ .Title }}</h2>
+                    <p>{{ .Content }} </p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        <div class="col-12 text-center">
+            <a class="button button-primary" href="/volunteer">Volunteer</a>
+            <a class="button button-primary" href="/donate">Donate</a>
+        </div>
+    </div>
+</div>

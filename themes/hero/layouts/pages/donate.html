@@ -1,0 +1,27 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-pages-aboutlayout{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "button" .Params.button "buttonLink" .Params.buttonLink)}}
+
+{{ $services := (where .Site.RegularPages "Type" "donate") }}
+{{if gt (len $services) 0}}
+<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <h2 class="text-center mb-3">Our Services</h2>
+    </div>
+    {{ range first 6 (sort $services ".Params.weight") }}
+    <div class="col-12 col-md-4 mb-1">
+      {{ .Render "summary" }}
+    </div>
+    {{ end }}
+    <div class="col-12 text-center">
+      <a class="button button-primary" href="{{ .Site.BaseURL }}services">View All Services</a>
+    </div>
+  </div>
+</div>
+{{end}}
+
+{{ end }}

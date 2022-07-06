@@ -1,7 +1,20 @@
 {{ define "header_css" }}{{ end }}
-{{ define "body_classes" }}page-pages-single{{ end }}
+{{ define "body_classes" }}page-pages-aboutlayout{{ end }}
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-{{ .Content }}
+{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "button" .Params.button "buttonLink" .Params.buttonLink)}}
+
+{{ if .Content }}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="page-intro">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
 {{ end }}

@@ -4,8 +4,8 @@
       <span class="hero-section">{{ .section }}</span>
       <h1>{{ .heading }}</h1>
       <p>{{ .subheading }}</p>
-      {{ if .Params.button }}
-      <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+      {{ if .button }}
+      <a class="button button-white" href="{{ .buttonLink | relURL }}">{{ .button }}</a>
       {{ end }}
     </div>
   </div>

@@ -15,7 +15,7 @@ theme = "hero"
     meta_twitter_creator = "@pinetreepac"
 
 [params.logo]
-    mobile = "/pinetreesamplelogo.png"
+    mobile = "/images/pinetreesamplelogo.png"
     mobile_height = "294px"
     mobile_width = "40px"
     desktop = "/images/pinetreesamplelogo.png"
@@ -23,6 +23,10 @@ theme = "hero"
     desktop_width = "294px"
     alt = "Pine Tree PAC"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [[menu.main]]
 	name = "About"
@@ -36,7 +40,7 @@ theme = "hero"
 
 [[menu.main]]
 	name = "Donate"
-	url = "/donate/"
+	url = "https://secure.anedot.com/get-involved-pac/donate"
     weight = 3
 
 [permalinks]

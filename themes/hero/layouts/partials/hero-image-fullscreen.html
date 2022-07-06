@@ -4,6 +4,12 @@
       <span class="hero-section">{{ .section }}</span>
       <h1>{{ .heading }}</h1>
       <p>{{ .subheading }}</p>
+      {{ if .button1 }}
+      <a class="button button-white" href="{{ .buttonLink1 | relURL }}">{{ .button1 }}</a>
+      {{ end }}
+      {{ if .button2 }}
+      <a class="button button-white" href="{{ .buttonLink2 | relURL }}">{{ .button2 }}</a>
+      {{ end }}
     </div>
     <div class="hero-down">
       <a href="#home">
