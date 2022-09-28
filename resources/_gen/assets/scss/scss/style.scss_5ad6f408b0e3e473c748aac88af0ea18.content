@@ -5593,7 +5593,6 @@ ol {
       display: block;
       width: 220px; } }
   .logo img {
-    width: 100%;
     height: auto; }
   .logo a {
     display: block;
