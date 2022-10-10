@@ -5,4 +5,4 @@ type: about
 weight: 1
 ---
 
-Identify capable liberty candidates that can win in new districts and target support at existing ones. Over 14 now elected New Hampshire state representatives have been identified by our team. 
+Identify capable liberty candidates that can win in new districts and target support at existing ones. Over 15 now elected New Hampshire state representatives have been identified by our team. 
