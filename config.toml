@@ -1,4 +1,4 @@
-baseURL = 'http://pinetreepac.github.io'
+baseURL = 'http://pinetreepac.com'
 languageCode = 'en-us'
 title = 'Pine Tree PAC'
 theme = "hero"
@@ -8,7 +8,7 @@ theme = "hero"
     meta_og_title = "Pine Tree PAC"
     meta_og_type = "website"
     meta_og_url = "https://pinetreepac.com"
-    meta_og_image = "https://www.mywebsite.com/images/tn.png"
+    meta_og_image = "https://pinetreepac.com/images/pinetreelogo_desktop.png"
     meta_og_description = "Join us in keeping New Hampshire free."
     meta_twitter_card = "summary"
     meta_twitter_site = "@pinetreepac"
