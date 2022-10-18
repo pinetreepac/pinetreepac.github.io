@@ -7,5 +7,5 @@ heroBackground: '/images/homepagehero2.jpg'
 button1: Volunteer
 buttonLink1: /volunteer
 button2: Donate
-buttonLink2: /donate
+buttonLink2: 'https://secure.anedot.com/pine-tree-pac/give'
 ---
